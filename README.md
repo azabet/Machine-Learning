@@ -3,6 +3,6 @@ Machine Learning
 
 A collection of machine-learning projects:
 
-- ___Recommender System:___  using Content-Based Filtering, Collaborative Filtering, and k-Nearest Neighbors to predict movie ratings based on users' prior ratings, and make recommendations.
+- __Recommender System:__  using _Content-Based Filtering_ and _Collaborative Filtering_ to predict movie ratings based on users' prior ratings.  Models used include Support Vector Machines (SVM), k-Nearest Neighbors (kNN), and Linear Regression.
 
-- ___Spam Filter:___  using Naive Bayes to classify emails as ham or spam.
+- __Spam Filter:__  using Naive Bayes to classify emails as ham or spam.
