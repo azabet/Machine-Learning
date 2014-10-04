@@ -8,17 +8,14 @@
 # ___Methods:___ Classification using <u>_Logistic Regression_</u> and <u>_Support Vector Machines_</u>, and unsupervised clustering using a personally developed model implementing <u>_Spatial Autocorrelation Analysis_</u>. <br>
 # ___Outcome:___ Discovered large-scale segregation of dopant domains in graphene which led to the discovery of a new mechanism of doping.  The autocorrelation model was able to detect an unknown number of clusters, unlike logistic regression or SVM in which the number of clusters should be pre-specified.  The model also achieved detection of nonlinear domain boundaries.  Results are published in [JACS 136, 1391 (2014)](http://dx.doi.org/10.1021/ja408463g).  
 
-### 0. Background
+## 0. Background
+## The purpose of this study is to analyze the patterns of dopant distribution in graphene, resulting from various doping methods, in order to understand and better control the doping process.  Two doping methods were developed: (1) chemical vapor deposition (_Sample 1_), and (2) reaction with ammonia (_Sample 2_).  
+## Data consists of dopant coodinates in nanometers, and sublattice positions with regards to graphene's unit cell (_A_ or _B_).  The goal is to detect the clustering of dopants with respect to the sublattice position.  Note that in pristine graphene the sublattice positions are equivalent, therefore they are expected to be uniformly occupied by the dopants.
 
-# The purpose of this study is to analyze the patterns of dopant distribution in graphene, resulting from various doping methods, in order to understand and better control the doping process.  Two doping methods were developed: (1) chemical vapor deposition (_Sample 1_), and (2) reaction with ammonia (_Sample 2_).  
-# 
-# Data consists of dopant coodinates in nanometers, and sublattice positions with regards to graphene's unit cell (_A_ or _B_).  The goal is to detect the clustering of dopants with respect to the sublattice position.  Note that in pristine graphene the sublattice positions are equivalent, therefore they are expected to be uniformly occupied by the dopants.
 
-### 1. Data Visualization
+## 1. Data Visualization
 
-# In[1]:
-
-# Import required packages
+## Import required packages
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -26,7 +23,7 @@ from sklearn.linear_model import LinearRegression
 from sklearn.linear_model import LogisticRegression
 from sklearn.svm import SVC
 
-# Set the maximum number of rows for displaying tables
+## Set the maximum number of rows for displaying tables
 pd.options.display.max_rows = 5
 
 sample1 = pd.read_csv('sample1.csv')
